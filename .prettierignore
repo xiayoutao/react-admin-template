@@ -1,0 +1,14 @@
+node_modules
+config/
+dist/
+public/
+
+.eslintrc.js
+.stylelintrc.js
+.prettierrc.js
+config-overrides.js
+package.json
+babel.config.js
+
+.idea
+.vscode

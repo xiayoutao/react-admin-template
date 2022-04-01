@@ -1,0 +1,15 @@
+node_modules
+config/
+public/
+dist/
+test
+
+.eslintrc.js
+.prettierrc.js
+.stylelintrc.js
+package.json
+tsconfig.json
+vue.config.js
+
+.idea
+.vscode
