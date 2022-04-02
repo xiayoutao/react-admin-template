@@ -7,8 +7,11 @@ module.exports = {
 	],
 	plugins: [
 		'stylelint-prettier',
-		'stylelint-scss'
+		'stylelint-scss',
+		'stylelint-order',
 	],
+	ignoreFiles: ['**/*.js', '**/*.md'],
+	customSyntax: "postcss-scss",
 	overrides: [
 		{
 			files: ['**/*.{html}'],
@@ -39,10 +42,17 @@ module.exports = {
 		'at-rule-no-unknown': [
 			true,
 			{
-				ignoreAtRules: ['mixin', 'include', 'extend', 'if', 'else']
+				ignoreAtRules: ['function', 'mixin', 'include', 'extend', 'each', 'if', 'else']
 			}
 		],
 		"scss/at-rule-no-unknown": true,
+		'order/order': [
+      'at-rules', // 规则
+      'declarations', // 声明
+      'custom-properties', // 自定义属性
+      'dollar-variables', // 变量
+      'rules', // 规则
+    ],
 		'plugin/rational-order': [
 			true,
 			{
