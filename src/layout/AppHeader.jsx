@@ -47,7 +47,7 @@ export default function AppHeader(props) {
 				<a
 					className="github-link mr15"
 					rel="noopener noreferrer"
-					href="https://github.com/ltadpoles/react-admin"
+					href="https://github.com/xiayoutao/react-admin-template"
 					target="_blank"
 				>
 					<Icon
