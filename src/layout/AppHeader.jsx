@@ -48,7 +48,8 @@ export default function AppHeader(props) {
 					className="github-link mr15"
 					rel="noopener noreferrer"
 					href="https://github.com/ltadpoles/react-admin"
-					target="_blank">
+					target="_blank"
+				>
 					<Icon
 						name="GithubOutlined"
 						style={{ fontSize: '30px', color: '#000' }}

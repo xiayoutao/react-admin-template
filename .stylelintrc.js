@@ -1,12 +1,12 @@
 module.exports = {
 	extends: [
-		'stylelint-config-prettier',
-		'stylelint-config-standard',
+		// 'stylelint-config-prettier',
+		// 'stylelint-config-standard',
 		'stylelint-config-rational-order',
-		'stylelint-prettier/recommended'
+		// 'stylelint-prettier/recommended',
 	],
 	plugins: [
-		'stylelint-prettier',
+		// 'stylelint-prettier',
 		'stylelint-scss',
 		'stylelint-order',
 	],
@@ -20,37 +20,38 @@ module.exports = {
 		{
 			files: ['**/*.{scss}'],
 			customSyntax: 'postcss-scss'
+		},
+		{
+			files: ['**/*.{css}'],
+			customSyntax: 'postcss-cssnext'
 		}
 	],
 	rules: {
 		"indentation": 'tab',
-		"unit-no-unknown": null,
-		"color-function-notation": "legacy",
+		"unit-no-unknown": [
+      true,
+      {
+        "ignoreUnits": "/rpx/"
+      }
+    ],
 		'max-empty-lines': 1,
-		'no-empty-source': null,
-		'no-invalid-double-slash-comments': null,
-		'selector-class-pattern': null,
-		'function-no-unknown': null,
-		'custom-property-no-missing-var-function': null,
-		'font-family-no-missing-generic-family-keyword': null,
-		'rule-empty-line-before': [
-			'always',
-			{
-				ignore: ['after-comment', 'first-nested']
-			}
-		],
+		'number-max-precision': 4, // css属性值中小数点之后数字的最大位数
+		'string-quotes': 'single',
+		"color-function-notation": "legacy", // 很重要
+		"scss/at-rule-no-unknown": null,
 		'at-rule-no-unknown': [
 			true,
 			{
 				ignoreAtRules: ['function', 'mixin', 'include', 'extend', 'each', 'if', 'else']
 			}
 		],
-		"scss/at-rule-no-unknown": true,
+		'declaration-colon-space-after': 'always-single-line',
+		'declaration-colon-space-before': 'never',
 		'order/order': [
+      'dollar-variables', // 变量
+      'custom-properties', // 自定义属性
       'at-rules', // 规则
       'declarations', // 声明
-      'custom-properties', // 自定义属性
-      'dollar-variables', // 变量
       'rules', // 规则
     ],
 		'plugin/rational-order': [

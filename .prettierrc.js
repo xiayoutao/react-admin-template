@@ -8,15 +8,15 @@ module.exports = {
 	bracketSpacing: true, // 对象大括号直接是否有空格，默认为true，效果：{ foo: bar }
 	// parser: 'babel', // 代码的解析引擎，默认为babylon，与babel相同。
 	// arrowParens: 'avoid', // 箭头函数只有一个参数的时候可以忽略括号
-	proseWrap: 'preserve', // 换行方式 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行
+	// proseWrap: 'preserve', // 换行方式 默认值。因为使用了一些折行敏感型的渲染器（如GitHub comment）而按照markdown文本样式进行折行
 	endOfLine: 'auto', // 结尾是 \n \r \n\r auto
-	jsxSingleQuote: false, // 在jsx中使用单引号代替双引号
-	jsxBracketSameLine: true, // 在jsx中把'>' 是否单独放一行
+	// jsxSingleQuote: false, // 在jsx中使用单引号代替双引号
+	// jsxBracketSameLine: true, // 在jsx中把'>' 是否单独放一行
 	stylelintIntegration: true, // prettier使用stylelint的代码格式进行校验
 	eslintIntegration: true, // prettier使用eslint的代码格式进行校验
 	// tslintIntegration: true, // prettier使用tslint的代码格式进行校验
-	// // disableLanguages: ['vue'], // 不格式化vue文件，vue文件的格式化单独设置
-	// htmlWhitespaceSensitivity: 'ignore',
-	ignorePath: '.prettierignore', // 不使用prettier格式化的文件填写在项目的.prettierignore文件中
-	requireConfig: false, // Require a 'prettierconfig' to format prettier
+	// disableLanguages: ['vue'], // 不格式化vue文件，vue文件的格式化单独设置
+	htmlWhitespaceSensitivity: 'ignore',
+	ignorePath: '.prettierignore' // 不使用prettier格式化的文件填写在项目的.prettierignore文件中
+	// requireConfig: false, // Require a 'prettierconfig' to format prettier
 };

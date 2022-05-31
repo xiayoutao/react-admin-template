@@ -16,7 +16,7 @@ module.exports = {
 			jsx: true,
 		},
 		ecmaVersion: 6,
-		sourceType: "module"
+		sourceType: "module",
 	},
 	rules: {
 		'prettier/prettier': 1,

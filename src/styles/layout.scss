@@ -1,9 +1,9 @@
 .app {
-	font-size: 1.6rem;
-
 	@media screen and (max-width: 960px) {
 		font-size: 1.4rem;
 	}
+
+	font-size: 1.6rem;
 
 	.aside {
 		position: fixed;
