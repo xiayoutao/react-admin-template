@@ -65,6 +65,10 @@ textarea {
 	font: 14px '\5b8b\4f53', arial, sans-serif;
 }
 
+body {
+	font-family: '微软雅黑';
+}
+
 input,
 select,
 textarea {
